@@ -50,13 +50,19 @@ This project followed a standard, robust data analysis workflow:
 
 ## ✨ Key Results and Recommendations
 
-The analysis identified actionable levers for strategic improvement:
+*The analysis identified actionable levers for strategic improvement:*
 
-Finding------------------------------->Actionable Recommendation
-1. High Revenue from Young Adults ($62K+)-------------------------->Target Young Adults with personalized, high-value campaigns and products.
-2. 57% of Purchases Used Discount--------------------------------->Review the discount strategy. Introduce non-monetary incentives (e.g., early access, exclusive bundles) to protect profit margins.
-3. Gender Revenue Disparity------------------------------->Investigate and potentially restructure marketing efforts to boost female customer engagement and spending.
-4. Loyalty Program Opportunity---------------------------->Formalize a loyalty program to reward the existing 3,116 'Loyal' customers and incentivize 'Returning' customers to increase frequency.
+1. High Revenue from Young Adults ($62K+)
+   - Target Young Adults with personalized, high-value campaigns and products.
+     
+2. 57% of Purchases Used Discount
+   - Review the discount strategy. Introduce non-monetary incentives (e.g., early access, exclusive bundles) to protect profit margins.
+     
+3. Gender Revenue Disparity
+   - Investigate and potentially restructure marketing efforts to boost female customer engagement and spending.
+     
+4. Loyalty Program Opportunity
+   - Formalize a loyalty program to reward the existing 3,116 'Loyal' customers and incentivize 'Returning' customers to increase frequency.
   
   
 ## 💻 How to Run the Project
