@@ -37,16 +37,16 @@ This project followed a standard, robust data analysis workflow:
    - Standardized columns and ensured data consistency before loading into MySQL.
    
 2. **Structured Analysis (MySQL)**
-   The cleaned data was loaded into a MySQL database to simulate a transactional environment. Key SQL queries were executed to derive specific business insights,
+   - The cleaned data was loaded into a MySQL database to simulate a transactional environment. Key SQL queries were executed to derive specific business insights,
    including:
-   Revenue comparison by Gender.
-   Identification of Discount-Dependent Products.
-   Customer segmentation into New, Returning, and Loyal groups.
-   Analysis of subscription impact on average spending and repeat purchases.
+   - Revenue comparison by Gender.
+   - Identification of Discount-Dependent Products.
+   - Customer segmentation into New, Returning, and Loyal groups.
+   - Analysis of subscription impact on average spending and repeat purchases.
    
 3. **Reporting and Visualization (Power BI)**
-   Developed an interactive Customer Behaviour Analytics Dashboard to visualize core metrics.
-   Key visualizations include: Total Revenue, Sales by Gender and Category, Percentage of Customers by Subscription Status, and Revenue by Age Group.
+   - Developed an interactive Customer Behaviour Analytics Dashboard to visualize core metrics.
+   - Key visualizations include: Total Revenue, Sales by Gender and Category, Percentage of Customers by Subscription Status, and Revenue by Age Group.
 
 ## ✨ Key Results and Recommendations
 
@@ -68,14 +68,16 @@ Finding------------------------------->Actionable Recommendation
    ```
    
 2. **Run Python Script**
-   Ensure all required libraries (Pandas, SQL-connector) are installed (pip install -r requirements.txt).
-   Execute the Python script to clean the data and load it into your local MySQL instance.
+   - Ensure all required libraries (Pandas, SQL-connector) are installed **(pip install -r requirements.txt)**.
+   - Execute the Python script to clean the data and load it into your local MySQL instance.
    
 3. **Execute SQL Queries**
-   Connect to your MySQL instance.
-   Run the main script located at Scripts/SQL/customer_behaviour.sql to generate the core analytical results.
+   - Connect to your MySQL instance.
+   - Run the main script located at **customer_behaviour.sql** to generate the core analytical results.
    
 4. **View Dashboard**
-   Open the primary dashboard file: Dashboard/customer_behaviour_visualization.pbix in Power BI Desktop.
+   Open the primary dashboard file: **customer_behaviour_visualization.pbix** in Power BI Desktop.
    Refresh the data connection to point to your local MySQL instance.
+
+
 
