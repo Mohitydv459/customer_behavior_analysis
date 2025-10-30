@@ -17,13 +17,13 @@ Key Features: Customer demographics (Age, Gender, Location, Subscription Status)
 
 ## 🛠️ Tools and Technologies
 1. Data Processing:
-   Python, Pandas
+   - Python, Pandas
 2. Database:
-   MySQL
+   - MySQL
 3. Visualization:
-   Power BI
+   - Power BI
 4. Reporting:
-   Gamma
+   - Gamma
    
 ## 🚀 Analysis Steps
 
