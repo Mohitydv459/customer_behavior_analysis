@@ -15,7 +15,7 @@ Source:Synthetic Retail Transactional Data
 Size: 3,900 rows and 18 columns.
 Key Features: Customer demographics (Age, Gender, Location, Subscription Status), purchase details (Category, Purchase Amount), and behavioral metrics (Review Rating, Discount Applied, Previous Purchases).
 
-##🛠️ Tools and Technologies
+## 🛠️ Tools and Technologies
 1. Data Processing:
    Python, Pandas
 2. Database:
