@@ -37,8 +37,8 @@ This project followed a standard, robust data analysis workflow:
    - Standardized columns and ensured data consistency before loading into MySQL.
    
 2. **Structured Analysis (MySQL)**
-   - The cleaned data was loaded into a MySQL database to simulate a transactional environment. Key SQL queries were executed to derive specific business insights,
-   including:
+   *The cleaned data was loaded into a MySQL database to simulate a transactional environment. Key SQL queries were executed to derive specific business insights,
+   including:*
    - Revenue comparison by Gender.
    - Identification of Discount-Dependent Products.
    - Customer segmentation into New, Returning, and Loyal groups.
@@ -82,8 +82,8 @@ This project followed a standard, robust data analysis workflow:
    - Run the main script located at **customer_behaviour.sql** to generate the core analytical results.
    
 4. **View Dashboard**
-   Open the primary dashboard file: **customer_behaviour_visualization.pbix** in Power BI Desktop.
-   Refresh the data connection to point to your local MySQL instance.
+   - Open the primary dashboard file: **customer_behaviour_visualization.pbix** in Power BI Desktop.
+   - Refresh the data connection to point to your local MySQL instance.
 
 
 
