@@ -29,12 +29,12 @@ Key Features: Customer demographics (Age, Gender, Location, Subscription Status)
 
 This project followed a standard, robust data analysis workflow:
 
-1.**Data Cleaning and Preparation (Python)**
-   Loaded the dataset using Pandas.
-   Performed Exploratory Data Analysis (df.info(), df.describe())
-   .Handled missing values in Review Rating by imputing the median rating for the respective product categories.
-   Feature Engineering: Created age_group bins and calculated the purchase_frequency_days.
-   Standardized columns and ensured data consistency before loading into MySQL.
+1. **Data Cleaning and Preparation (Python)**
+   - Loaded the dataset using Pandas.
+   - Performed Exploratory Data Analysis (df.info(), df.describe())-
+   - Handled missing values in Review Rating by imputing the median rating for the respective product categories.
+   - Feature Engineering: Created age_group bins and calculated the purchase_frequency_days.
+   - Standardized columns and ensured data consistency before loading into MySQL.
    
 2. **Structured Analysis (MySQL)**
    The cleaned data was loaded into a MySQL database to simulate a transactional environment. Key SQL queries were executed to derive specific business insights,
