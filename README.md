@@ -1,38 +1,24 @@
-# customer_behavior_analysis
-This project leverages a retail company's consumer shopping data to identify key trends, optimize marketing strategies, and improve customer loyalty. It using Python,SQL and PowerBI
+# Customer Behaviour Analysis 🛍️
 
+## 📌 Project Overview
+This project analyzes a customer shopping dataset to uncover patterns in consumer behavior, purchasing trends, and platform engagement. The goal is to derive actionable business insights that can help optimize inventory, marketing strategies, and customer retention programs.
 
-## 🛍️ Retail Customer Shopping Behavior Analysis
+The analysis follows a full data pipeline: **Data Cleaning → Exploratory Data Analysis (EDA) → Feature Engineering → Statistical Correlation → Database Integration (MySQL)  →  Visulization(Power Bi)**
 
-# 🌟 Overview
-This project is an end-to-end data analysis initiative focused on uncovering key purchasing patterns, customer segments, and revenue drivers within a retail dataset. The goal is to provide actionable strategic recommendations to improve sales, customer engagement, and long-term loyalty.
+## ❓ Business Problem
+The retail business faces challenges in understanding its diverse customer base. Key questions addressed in this analysis include:
+1.  **Customer Value:** Do subscription models actually drive higher spending or loyalty?
+2.  **Demographic Targeting:** Which age groups and genders generate the most revenue?
+3.  **Inventory Planning:** How does demand for specific categories (e.g., Clothing vs. Footwear) shift across seasons?
+4.  **Rating Drivers:** Is there a relationship between shipping speed, spending levels, and customer satisfaction ratings?
 
-The analysis answers the central business question:"How can the company leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?"
-
-## 📊 Dataset
-
-Source:Synthetic Retail Transactional Data
-Size: 3,900 rows and 18 columns.
-Key Features: Customer demographics (Age, Gender, Location, Subscription Status), purchase details (Category, Purchase Amount), and behavioral metrics (Review Rating, Discount Applied, Previous Purchases).
-
-## 🛠️ Tools and Technologies
-1. Data Processing:
-   - Python, Pandas
-2. Database:
-   - MySQL
-3. Visualization:
-   - Power BI
-4. Reporting:
-   - Gamma
-   
 ## 🚀 Analysis Steps
 
-This project followed a standard, robust data analysis workflow:
 
 1. **Data Cleaning and Preparation (Python)**
    - Loaded the dataset using Pandas.
    - Performed Exploratory Data Analysis (df.info(), df.describe())-
-   - Handled missing values in Review Rating by imputing the median rating for the respective product categories.
+   - Handled missing values in Review Rating by imputing the mean rating for the respective product categories.
    - Feature Engineering: Created age_group bins and calculated the purchase_frequency_days.
    - Standardized columns and ensured data consistency before loading into MySQL.
    
@@ -48,42 +34,30 @@ This project followed a standard, robust data analysis workflow:
    - Developed an interactive Customer Behaviour Analytics Dashboard to visualize core metrics.
    - Key visualizations include: Total Revenue, Sales by Gender and Category, Percentage of Customers by Subscription Status, and Revenue by Age Group.
 
-## ✨ Key Results and Recommendations
+## 📊 Key Insights & Findings
+* **Loyalty Program Gap:** Surprisingly, **Subscribers and Non-Subscribers have nearly identical average spending** (~$59-60). The current subscription model does not significantly increase basket size.
+* **Demographics:** Spending is evenly distributed across age groups. There is **no strong linear correlation** between a customer's age and their purchase amount or frequency.
+* **Seasonal Trends:** **Spring** is the peak season for sales. While "Clothing" sells well year-round, "Footwear" sees a slight dip in the Fall.
+* **Shipping & Satisfaction:** Customers using **Standard Shipping** gave higher average ratings (3.82) compared to **Store Pickup** (3.71), suggesting potential issues with the pickup experience.
+* **Spending Behavior:** High-value transactions (> $70) differ slightly in satisfaction, with "High Spenders" giving better ratings on average than "Medium Spenders."
 
-*The analysis identified actionable levers for strategic improvement:*
+## 🛠️ Tools and Technologies
+1. Data Processing:
+   - Python, Pandas
+2. Database:
+   - MySQL
+3. Visualization:
+   - Power BI
 
-1. High Revenue from Young Adults ($62K+)
-   - Target Young Adults with personalized, high-value campaigns and products.
-     
-2. 57% of Purchases Used Discount
-   - Review the discount strategy. Introduce non-monetary incentives (e.g., early access, exclusive bundles) to protect profit margins.
-     
-3. Gender Revenue Disparity
-   - Investigate and potentially restructure marketing efforts to boost female customer engagement and spending.
-     
-4. Loyalty Program Opportunity
-   - Formalize a loyalty program to reward the existing 3,116 'Loyal' customers and incentivize 'Returning' customers to increase frequency.
-  
-  
-## 💻 How to Run the Project
+## 📂 Dataset Description
+The dataset consists of **3,900 records** with **19 columns**, including:
+* **Customer Details:** `Customer ID`, `Age`, `Gender`, `Location`, `Subscription Status`
+* **Transaction Details:** `Purchase Amount`, `Payment Method`, `Discount Applied`, `Frequency of Purchases`
+* **Product Info:** `Item Purchased`, `Category`, `Size`, `Color`, `Season`
+* **Feedback:** `Review Rating`, `Shipping Type`
 
-1. **Clone the Repository**
-   ```bash
-      git clone https://github.com/Mohitydv459/customer_behavior_analysis.git
-      cd retail-customer-analysis
-   ```
-   
-2. **Run Python Script**
-   - Ensure all required libraries (Pandas, SQL-connector) are installed **(pip install -r requirements.txt)**.
-   - Execute the Python script to clean the data and load it into your local MySQL instance.
-   
-3. **Execute SQL Queries**
-   - Connect to your MySQL instance.
-   - Run the main script located at **customer_behaviour.sql** to generate the core analytical results.
-   
-4. **View Dashboard**
-   - Open the primary dashboard file: **customer_behaviour_visualization.pbix** in Power BI Desktop.
-   - Refresh the data connection to point to your local MySQL instance.
+
+
 
 
 
